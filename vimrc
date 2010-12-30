@@ -78,8 +78,8 @@ map <leader>tm :tabmove
 "vnoremap : ;
 
 " Automatic fold settings for specific files. Uncomment to use.
-" autocmd FileType ruby setlocal foldmethod=syntax
-" autocmd FileType css  setlocal foldmethod=indent shiftwidth=2 tabstop=2
+autocmd FileType ruby setlocal foldmethod=syntax
+autocmd FileType css  setlocal foldmethod=indent shiftwidth=2 tabstop=2
 
 " For the MakeGreen plugin and Ruby RSpec. Uncomment to use.
 autocmd BufNewFile,BufRead *_spec.rb compiler rspec
@@ -87,3 +87,45 @@ autocmd BufNewFile,BufRead *_spec.rb compiler rspec
 set titlestring=%t%(\ %M%)%(\ (%{expand(\"%:p:h\")})%)%(\ %a%)\ -\ %{v:servername}
 
 au BufReadPost Vagrantfile set syntax=ruby
+
+if has("autocmd")
+  autocmd FileType sass setlocal ts=2 sts=2 sw=2 expandtab list
+  autocmd FileType haml setlocal ts=2 sts=2 sw=2 expandtab list
+endif
+
+" Shortcut to rapidly toggle `set list`
+nmap <leader>l :set list!<CR>
+ 
+" Use the same symbols as TextMate for tabstops and EOLs
+set listchars=tab:▸\ ,eol:¬
+
+" Function to strip trailing whitespace from code
+function! <SID>StripTrailingWhitespaces()
+    " Preparation: save last search, and cursor position.
+    let _s=@/
+    let l = line(".")
+    let c = col(".")
+    " Do the business:
+    %s/\s\+$//e
+    " Clean up: restore previous search history, and cursor position
+    let @/=_s
+    call cursor(l, c)
+endfunction
+
+"autocmd BufWritePre *.haml,*.sass,*.rb,*.js :call <SID>StripTrailingWhitespaces()
+autocmd BufWritePre *.* :call <SID>StripTrailingWhitespaces()
+
+" Convert multiple blank lines into one blank line
+function! <SID>StripMultipleBlankLines()
+    " Preparation: save last search, and cursor position.
+    let _s=@/
+    let l = line(".")
+    let c = col(".")
+    " Do the business:
+    g/^\_$\n\_^$/d
+    " Clean up: restore previous search history, and cursor position
+    let @/=_s
+    call cursor(l, c)
+endfunction
+
+autocmd BufWritePre *.* :call <SID>StripMultipleBlankLines()
