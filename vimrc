@@ -129,3 +129,6 @@ function! <SID>StripMultipleBlankLines()
 endfunction
 
 autocmd BufWritePre *.* :call <SID>StripMultipleBlankLines()
+
+" Use this to unhighlight after a search
+nmap <leader>h :nohlsearch<CR>
