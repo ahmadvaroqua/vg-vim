@@ -136,3 +136,6 @@ nmap <leader>h :nohlsearch<CR>
 " Allows you to sudo write a file if you edited it and forgot to sudo, just
 " use :w!!
 cmap w!! %!sudo tee > /dev/null %
+
+" Toggle the taglist browser
+nmap <leader>c :TlistToggle<CR>
