@@ -49,9 +49,12 @@ set laststatus=2                  " Show the status line all the time
 " Useful status information at bottom of screen
 set statusline=[%n]\ %<%.99f\ %h%w%m%r%y\ %{fugitive#statusline()}%{exists('*CapsLockStatusline')?CapsLockStatusline():''}%=%-16(\ %l,%c-%v\ %)%P
 
+" Use 256 colors
+set t_Co=256
+
 " Or use vividchalk
 "colorscheme topfunky-light
-"colorscheme vividchalk 
+"colorscheme vividchalk
 "colorscheme ir_black
 "colorscheme default
 colorscheme molokai
@@ -95,7 +98,7 @@ endif
 
 " Shortcut to rapidly toggle `set list`
 nmap <leader>l :set list!<CR>
- 
+
 " Use the same symbols as TextMate for tabstops and EOLs
 set listchars=tab:▸\ ,eol:¬
 
