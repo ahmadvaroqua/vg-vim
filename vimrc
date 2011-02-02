@@ -89,7 +89,8 @@ autocmd BufNewFile,BufRead *_spec.rb compiler rspec
 
 set titlestring=%t%(\ %M%)%(\ (%{expand(\"%:p:h\")})%)%(\ %a%)\ -\ %{v:servername}
 
-au BufReadPost Vagrantfile set syntax=ruby
+au BufReadPost Vagrantfile* set syntax=ruby
+au BufReadPost *.thor set syntax=ruby
 
 if has("autocmd")
   autocmd FileType sass setlocal ts=2 sts=2 sw=2 expandtab list
