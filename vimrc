@@ -3,6 +3,8 @@
 
 set nocompatible                  " Must come first because it changes other options.
 
+set encoding=utf-8
+
 silent! call pathogen#runtime_append_all_bundles()
 
 syntax enable                     " Turn on syntax highlighting.
@@ -104,6 +106,9 @@ endif
 nmap <leader>l :set list!<CR>
 
 " Use the same symbols as TextMate for tabstops and EOLs
+" http://vimcasts.org/episodes/show-invisibles/
+" Arrow is U+25B8
+" EOL is U+00AC
 set listchars=tab:▸\ ,eol:¬
 
 " Function to strip trailing whitespace from code
