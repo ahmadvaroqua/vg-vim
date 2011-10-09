@@ -1,11 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =9
-let g:netrw_dirhist_1='/Users/ahmadvaroqua'
-let g:netrw_dirhist_2='/Users/ahmadvaroqua/Dropbox'
-let g:netrw_dirhist_3='/Users/ahmadvaroqua/Dropbox/Projects'
-let g:netrw_dirhist_4='/Users/ahmadvaroqua/Dropbox/Projects/VG'
-let g:netrw_dirhist_5='/Users/ahmadvaroqua/Dropbox/Projects/VG/Engineering'
-let g:netrw_dirhist_6='/Users/ahmadvaroqua/Dropbox/Projects/VG/Engineering/rails_cookbook2'
-let g:netrw_dirhist_7='/Users/ahmadvaroqua/Dropbox/Projects/VG/Engineering/rails_cookbook2/unicorn'
-let g:netrw_dirhist_8='/Users/ahmadvaroqua/Dropbox/Projects/VG/Engineering/rails_cookbook2/unicorn/recipes'
-let g:netrw_dirhist_9='/Users/ahmadvaroqua'
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/Users/ahmadvaroqua/Dropbox/Projects/VG/Engineering/opscode1/roles'
+let g:netrw_dirhist_2='/Users/ahmadvaroqua/Dropbox/Projects/VG/Engineering/opscode1/cookbooks/rvm'
+let g:netrw_dirhist_3='/Users/ahmadvaroqua/Dropbox/Projects/VG/Engineering/opscode1/cookbooks/rvm/recipes'
+let g:netrw_dirhist_4='/Users/ahmadvaroqua/Dropbox/Projects/VG/Engineering/opscode1/cookbooks/rvm'
+let g:netrw_dirhist_5='/Users/ahmadvaroqua/Dropbox/Projects/VG/Engineering/opscode1/cookbooks/rvm/recipes'
