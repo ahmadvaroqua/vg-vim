@@ -30,7 +30,7 @@
 	url = http://github.com/tpope/vim-git.git
 [submodule "bundle/vim-tcomment"]
 	path = bundle/vim-tcomment
-	url = http://github.com/tsaleh/vim-tcomment.git
+	url = git@github.com:ahmadvaroqua/vim-tcomment.git
 [submodule "bundle/vim-ragtag"]
 	path = bundle/vim-ragtag
 	url = http://github.com/tpope/vim-ragtag.git
