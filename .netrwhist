@@ -1,7 +1,7 @@
 let g:netrw_dirhistmax  =10
 let g:netrw_dirhist_cnt =5
-let g:netrw_dirhist_1='/Users/ahmadvaroqua/Dropbox/Projects/VG/Engineering/opscode1/roles'
-let g:netrw_dirhist_2='/Users/ahmadvaroqua/Dropbox/Projects/VG/Engineering/opscode1/cookbooks/rvm'
-let g:netrw_dirhist_3='/Users/ahmadvaroqua/Dropbox/Projects/VG/Engineering/opscode1/cookbooks/rvm/recipes'
-let g:netrw_dirhist_4='/Users/ahmadvaroqua/Dropbox/Projects/VG/Engineering/opscode1/cookbooks/rvm'
-let g:netrw_dirhist_5='/Users/ahmadvaroqua/Dropbox/Projects/VG/Engineering/opscode1/cookbooks/rvm/recipes'
+let g:netrw_dirhist_1='/Users/ahmadvaroqua/Dropbox/Projects/VGESTIMATES'
+let g:netrw_dirhist_2='/Users/ahmadvaroqua/Dropbox/Projects/VGESTIMATES/VGESTIMATES'
+let g:netrw_dirhist_3='/Users/ahmadvaroqua/Dropbox/Projects/VGESTIMATES/VGESTIMATES/source'
+let g:netrw_dirhist_4='/Users/ahmadvaroqua/Downloads/ELLIEKAI'
+let g:netrw_dirhist_5='/Users/ahmadvaroqua/Dropbox/Projects/VGPROJECTS/VGPROJECTS/app/admin'
